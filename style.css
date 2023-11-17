@@ -18,7 +18,7 @@ a{
 /* bgimage */
 .sec01::after {
   content: "";
-  background-image: url('../dist/img/Rectangle 1181.png');
+  background-image: url('../mission01/img/Rectangle1181.png');
   background-size: cover;
   position: absolute;
   bottom: 0;

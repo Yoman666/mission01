@@ -1,0 +1,405 @@
+*{
+    position: relative;
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC', sans-serif;
+    line-height: 1.2;
+    font-size: 20px;
+    font-weight: 400;
+    transition: .5s;
+  
+  }
+  body {
+        padding-top: 56px; 
+      }
+  a{
+    text-decoration: none;
+  }
+  
+  /* bgimage */
+  .sec01::after {
+    content: "";
+    background-image: url('../dist/img/Rectangle 1181.png');
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: fill;
+    width: 100%; 
+    height: 100%; 
+    display: block;
+    z-index: -1;
+  }
+  .sec02, .sec03, .sec04{
+    overflow: hidden;
+  }
+  .container{
+    z-index: 99;
+  }
+  .sec02{
+    background-color: #0D2D59;
+  }
+  .sec03{
+    background-color: #AEC6E8;
+  }
+  .sec04{
+    background-color: #87A9D9;
+  }
+  .sec05{
+    background-color: #E4E7EC;
+  }
+  .sec06{
+    background-color: #FDB338;
+  }
+  .ft{
+    background-color: #0D2D59;
+  }
+  .sec02::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -65%;
+    transform: translate(0%, -50%); 
+    width: 100%;
+    height: 200%;
+    display: block;
+    background-color: #0D2D59;
+    border-radius: 50%;
+    /* border-radius: 50% 0 0 50%; */
+    z-index: 1;
+    border: 200px solid #87A9D9;
+    box-shadow: -200px 0 0 #AEC6E8;
+  }
+  .sec03::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -65%;
+    transform: translate(0%, -50%); 
+    width: 100%;
+    height: 200%;
+    display: block;
+    background-color: #0D2D59;
+    border-radius: 50%;
+    /* border-radius: 50% 0 0 50%; */
+    z-index: 1;
+    border: 200px solid #87A9D9;
+    /* box-shadow: -200px 0 0 #AEC6E8; */
+  }
+  
+  .sec02::after, .sec03::after, .sec04::after {
+    content: "";
+    position: absolute;
+    bottom: -17%;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    display: block;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 3;
+  }
+  
+  
+  /* alltext */
+  .bannername h2{
+    font-size: 80px;
+    font-weight: 700;
+  
+  }
+  .bannername h4{
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .slogan{
+    font-size: 80px;
+    font-weight: 700;
+  }
+  .sec03 h4{
+    font-size: 24px;
+    color: #fff;
+  }
+  .sec05 .donatetext span{
+    font-size: 48px;
+    font-weight: 800;
+    margin: 20px 0px;
+    /* background-color: #000000; */
+    padding: 20px;
+    /* color: #FDB338; */
+  
+  }
+  .sec05 .donatesolgan{
+    font-size: 32px;
+    font-weight: 800;
+  }
+  .sec05 .dname{
+    font-size: 24px;
+    color: #383735;
+    font-weight: 700;
+    margin: 10px 0px;
+    display: inline-block;
+  }
+  .sec05 .dmoney{
+    font-size: 40px;
+    color: #000;
+    font-weight: 900;
+    margin: 10px 0px;
+    display: inline-block;
+  }
+  .sec05 .dnum{
+    font-size: 18px;
+    color: #000;
+    background-color: #FFEBBA;
+    font-weight: 900;
+    padding: 10px 20px;
+    border-radius: 30px;
+    display: inline-block;
+  }
+  
+  .sec05 .dimput{
+    font-size: 24px;
+    color: #000;
+    background-color: #00000030;
+    font-weight: 900;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    /* border-radius: 30px; */
+    border: 3px solid #000;
+  }
+  
+  .sec06 p{
+    font-size: 24px;
+    font-weight: 700;
+    width: 70%;
+    text-align: center;
+    line-height: 2;
+  }
+  
+  .sec06 .mailbody label{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 2;
+  }
+  .sec06 .mailbody input, .sec06 textarea{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 2;
+    margin-bottom: 10px;
+    padding: 0px 10px;
+  }
+  .sec06 button{
+    background-color: #193864;
+    padding: 10px 25px;
+    color: #fff;
+    border-radius: 50px;
+    font-weight: 600;
+    margin: 30px 0px;
+    font-size: 32px;
+    border: 0px solid #000;
+  }
+  
+  .ft{
+    color: #fff;
+  }
+  /* nav */
+  nav.navbar{
+    border-radius: 10px ;
+    top: 10px;
+    margin: 20px;
+  }
+  .sec02 .left02 p{
+    color: #fff;
+    line-height: 2;
+  }
+  
+  .bg-blue{
+  background-color: #193864;
+  box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.5);
+  
+  }
+  
+  /* all */
+  .textbgc{
+    background-color: #193864;
+    display: inline-block;
+    color: #fff;
+    padding: 10px;
+    margin: 10px 0px;
+    text-align: center;
+  }
+  .btn01{
+    background-color: #fff;
+    padding: 10px;
+    margin: 5px;
+    color: #0D2D59;
+    margin: 20px 0px;
+    box-shadow: 10px 10px 0px 1px;
+    font-size: 36px;
+  }
+  .btn01:hover{
+    color: #FDB338;
+    text-decoration: none;
+  }
+  section{
+    padding: 150px 0px;
+  }
+  .buttonstyle01{
+    background-color: #FDB338;
+    padding: 10px 25px;
+    color: #fff;
+    border-radius: 50px;
+    font-weight: 600;
+    margin: 30px 0px;
+    font-size: 32px;
+  }
+  
+  
+  /* sec01 */
+  .sec01{
+    padding: 0px 4rem;
+  }
+  .bannername{
+    position: absolute;
+  }
+  .center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -120px;
+  }
+  .bannerimg{
+    max-width: 100%;
+    height: auto;
+    width: 500px;
+    z-index: 1;
+  }
+  .sec01 .slogan{
+    margin: 40px 0px;
+    display: block;
+  }
+  .twimg{
+    position: absolute;
+    top: 10%;
+    right: 0;
+  }
+  
+  /* sec02 */
+  .sec02 .container{
+    z-index: 3;
+  }
+  .sec02 .right02 {
+    margin-bottom: -6%;
+  }
+  .sec02 .sec02img{
+    max-width: 100%;
+    height: auto;
+    z-index: 3;
+    transform: scale(1.1);
+  }
+  .sec02 .left02{
+    z-index: 99;
+  }
+  
+  /* sec03 */
+  .sec03 img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .sec03 .row div{
+    display: flex;
+    flex-direction:column;
+  }
+  
+  .sec03 .textbgc{
+    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* sec05 */
+  .sec05 .singledonate{
+    border: 5px solid #000;
+    border-radius: 5px;
+    flex: 0 0 calc(50% - 10px);
+    margin: 5px;
+    box-sizing: border-box;
+    padding: 50px 30px;
+    background-color: #fff;
+  }
+  .sec05 .singledonate:hover{
+    border: 5px solid #000;
+    border-radius: 5px;
+    flex: 0 0 calc(50% - 10px);
+    margin: 5px;
+    box-sizing: border-box;
+    padding: 50px 30px;
+    background-color: #FDB338;
+    cursor: pointer;
+  }
+  .alldonatino .singledonate.selected {
+    background-color: #FDB338;
+    /* 添加其他需要的样式 */
+  }
+  
+  .sec06 .mailbody{
+    width: 80%;
+  }
+  .sec06 .mailbody #myForm{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 5px;
+    margin: 30px 0px;
+  }
+  
+  
+  /* --------- */
+  
+  .modal .modal-dialog{
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+  }
+  
+  
+  /* 滑鼠 */
+  #cross {
+    position: absolute;
+    transition: 0s;
+    z-index: 9999;
+    pointer-events: none;
+  }
+  /* #cross::after{
+    content: "";
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-image: url('/dist/img/Group2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 99999;
+    display: block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+  } */
+  #cross:before, #cross:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 15px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  #cross:after {
+    transform: translate(-50%, -50%) rotate(136deg);
+  }

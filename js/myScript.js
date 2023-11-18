@@ -53,32 +53,62 @@ document.addEventListener('click', function(event) {
 
 
 //   mose 
-$(window).mousemove(function (evt) {
-    var x = evt.pageX;
-    var y = evt.pageY;
-    console.log(x);
+// $(window).mousemove(function (evt) {
+//     var x = evt.pageX;
+//     var y = evt.pageY;
+//     console.log(x);
   
-    $("#cross").css("left", x + "px");
-    $("#cross").css("top", y + "px");
+//     $("#cross").css("left", x + "px");
+//     $("#cross").css("top", y + "px");
   
-    if (x < $(window).width() / 2 - 50) {
-      $("#cat").attr("src", "https://awiclass.monoame.com/catpic/cat_left.png");
-    } else if (x > $(window).width() / 2 + 50) {
-      $("#cat").attr("src", "https://awiclass.monoame.com/catpic/cat_right.png");
-    } else {
-      $("#cat").attr("src", "https://awiclass.monoame.com/catpic/cat_top.png");
-    }
-    if (x < $(window).width() / 2 - 50 && y < $(window).height() / 2) {
-      $("#cat").attr(
-        "src",
-        "https://awiclass.monoame.com/catpic/cat_lefttop.png"
-      );
-    }
-    if (x > $(window).width() / 2 + 50 && y < $(window).height() / 2) {
-      $("#cat").attr(
-        "src",
-        "https://awiclass.monoame.com/catpic/cat_righttop.png"
-      );
+//     if (x < $(window).width() / 2 - 50) {
+//       $("#cat").attr("src", "https://awiclass.monoame.com/catpic/cat_left.png");
+//     } else if (x > $(window).width() / 2 + 50) {
+//       $("#cat").attr("src", "https://awiclass.monoame.com/catpic/cat_right.png");
+//     } else {
+//       $("#cat").attr("src", "https://awiclass.monoame.com/catpic/cat_top.png");
+//     }
+//     if (x < $(window).width() / 2 - 50 && y < $(window).height() / 2) {
+//       $("#cat").attr(
+//         "src",
+//         "https://awiclass.monoame.com/catpic/cat_lefttop.png"
+//       );
+//     }
+//     if (x > $(window).width() / 2 + 50 && y < $(window).height() / 2) {
+//       $("#cat").attr(
+//         "src",
+//         "https://awiclass.monoame.com/catpic/cat_righttop.png"
+//       );
+//     }
+//   });
+  
+  
+  // donationnum
+  document.addEventListener('click', function(event) {
+    // 检查点击的元素是否是捐款选项
+    if (!event.target.closest('.singledonate')) {
+      selectDonationId = '';
     }
   });
   
+  var selectDonationId="";
+  function slectId (id){
+    selectDonationId = id;
+    console.log(id);
+  }
+
+  function donate(){
+    if(!selectDonationId){
+      alert("請選擇一項");
+      return;
+    }
+    var singleDonateNum = document.getElementById(selectDonationId).querySelector('.dmoney');
+    var singleIntNum = parseInt(singleDonateNum.textContent.replace('NT$','').replace('',''));
+    var totalNum = document.getElementById('totalnum');
+    var totalIntNum = parseInt(totalNum.textContent.replace(/,/g, ''), 10);
+    var addNum = parseInt(totalIntNum + singleIntNum);
+    totalNum.textContent = addNum.toLocaleString(); // 使用 toLocaleString 添加千位分隔符
+    console.log('new', totalNum.textContent);
+    alert('捐款成功!');
+    // $('#customModal').modal('show');
+  }

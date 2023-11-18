@@ -9,6 +9,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700;800;900&amp;family=Signika:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<!-- 引入 Skrollr 库 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
 </head>
 <body>
 <!-- partial:index.partial.html -->
@@ -58,14 +60,14 @@
       <img src="./img/Group4045.png" alt="" class="bannerimg">
   </div>
     <img src="./img/taiwan.png" alt="" class="twimg">
-    <a href="#donate" class="btn01"><img src="./img/Frame32.png" alt="">我要贊助喵喵</a>
+    <a href="#donate" class="btn01"><img src="./img/Frame32.png" alt="" class="pr-1">我要贊助喵喵</a>
     <br>
     <h1 class="textbgc slogan">從喵的眼中，看見台灣</h1>
   </div>
 </section>
 
 <!-- section02 -->
-<section class="sec02" id="opinion">
+<section class="sec02" id="opinion" data-0="transform: traslateX(0) " ata-100="transform: traslateX(100px)">
   <div class="container">
     <div class="row">
       <div class="left02 col-sm-6">
@@ -73,7 +75,7 @@
         <p>我堅信！藉由推動更完善的貓咪福利和相關政策，更是間接地投資於台灣的未來。畢竟，民眾的身心健康與工作熱情是推動經濟的核心動力。透過完善的貓咪福利政策，為台灣的 GDP 經濟帶來巨大效益。因此，我期望能在立法院內推進這些政策，確保每一隻貓咪都能得到他們應有的照顧，同時也為台灣的經濟發展助一臂之力。讓我們一同護航台灣的幸福經濟，從照顧每一隻貓咪開始。」</p>
       </div>
       <div class="right02 col-sm-6 d-flex justify-content-end">
-        <img src="/mission01/img/Group1.png" alt="" class="sec02img">
+        <img src="/mission01/img/Group1.png" alt="" class="sec02img" data-0="transform: scale(0.8) rotate(0deg)" data-100="transform: scale(1) rotate(15deg)" data-200="transform: scale(1.2) rotate(-5deg)">
       </div>
     </div>
   </div>
@@ -172,7 +174,7 @@
       </div>
       
       <div class="d-flex justify-content-center">
-        <a class="buttonstyle01" data-toggle="modal" data-target="#customModal">前往捐款</a>
+        <a class="buttonstyle01 d-flex align-items-center" data-toggle="modal" data-target="#customModal"> <img src="./img/Frame32.png" alt="" class="pr-1 pt-1"> 前往捐款</a>
       </div>
 
       
@@ -205,7 +207,7 @@
         <label for="commentInput">您的建言</label>
         <textarea id="commentInput" placeholder="請在此輸入您的建言"></textarea>
 
-        <button type="submit">送出</button>
+        <button type="submit" class="d-flex align-items-center justify-content-center"> <img src="./img/Frame13.png" alt="" class="pr-1 pt-1"> 送出</button>
       </form>
     </div>
     
@@ -216,7 +218,7 @@
 
 <footer class="ft py-3">
   <div class="container d-flex align-items-center justify-content-around ">
-    <p>版權聲明：© 2023 喵莉涵 版權所有。</p>
+    <p>© 2023 喵立翰 Irena 版權所有</p>
 
     <div>
       <p>辦公室地址：喵星區，毛茸茸大道88號，喵喵大樓3樓</p>

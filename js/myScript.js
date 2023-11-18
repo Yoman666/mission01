@@ -1,3 +1,6 @@
+// 初始化滾動
+var s = skrollr.init();
+
 document.addEventListener('click', function(event) {
     var clickedElement = event.target;
     var isSingledonate = clickedElement.closest('.singledonate');

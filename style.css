@@ -7,9 +7,11 @@
   font-weight: 400;
   transition: .5s;
 
+
 }
 body {
       padding-top: 56px; 
+      height: auto;
     }
 a{
   text-decoration: none;
@@ -235,11 +237,22 @@ box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.5);
   margin: 20px 0px;
   box-shadow: 10px 10px 0px 1px;
   font-size: 36px;
+  z-index: 999;
+}
+.mailbody button:hover{
+  background-color: #0D2D5980;
+}
+.buttonstyle01:hover{
+  background-color: #FDB33880;
+}
+.mailbody button:hover img, .buttonstyle01:hover img{
+  transform: scale(1.2);
 }
 .btn01:hover{
   color: #FDB338;
   text-decoration: none;
 }
+.
 section{
   padding: 150px 0px;
 }
@@ -256,7 +269,7 @@ section{
 
 /* sec01 */
 .sec01{
-  padding: 0px 4rem;
+  padding: 4rem;
 }
 .bannername{
   position: absolute;
@@ -265,13 +278,30 @@ section{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: -120px;
+  margin-bottom: -140px;
 }
 .bannerimg{
   max-width: 100%;
   height: auto;
   width: 500px;
   z-index: 1;
+}
+.center-container::after{
+  content: "meow!!";
+  position: absolute;
+  top: 50px;
+  right: 20%;
+  font-size: 4rem;
+  visibility: hidden;
+  font-weight: 900;
+  color: rgb(13, 45, 89);
+}
+.bannerimg:hover{
+  transform: rotate(-10deg);
+}
+.center-container:hover::after  {
+  opacity: 1; 
+  visibility: visible;
 }
 .sec01 .slogan{
   margin: 40px 0px;

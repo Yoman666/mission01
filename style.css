@@ -361,20 +361,14 @@ section{
 .sec05 .singledonate{
   border: 5px solid #000;
   border-radius: 5px;
-  flex: 0 0 calc(50% - 10px);
-  margin: 5px;
+  flex: 0 0 calc(50% - 30px);
+  margin: 15px;
   box-sizing: border-box;
   padding: 50px 30px;
   background-color: #fff;
   overflow: hidden;
 }
 .sec05 .singledonate:hover{
-  border: 5px solid #000;
-  border-radius: 5px;
-  flex: 0 0 calc(50% - 10px);
-  margin: 5px;
-  box-sizing: border-box;
-  padding: 50px 30px;
   background-color: #FDB338;
   cursor: pointer;
 }
@@ -439,4 +433,10 @@ section{
 }
 #cross:after {
   transform: translate(-50%, -50%) rotate(136deg);
+}
+
+@media(max-width:990px){
+  #cross{
+    display: none;
+  }
 }

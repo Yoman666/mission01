@@ -1,5 +1,6 @@
 // 初始化滾動
 var s = skrollr.init();
+// window.addEventListener('scroll', yourScrollHandler, { passive: false });
 
 document.addEventListener('click', function(event) {
     var clickedElement = event.target;
@@ -52,34 +53,34 @@ document.addEventListener('click', function(event) {
 
 
 //   mose 
-$(window).mousemove(function (evt) {
-    var x = evt.pageX;
-    var y = evt.pageY;
-    console.log(x);
+// $(window).mousemove(function (evt) {
+//     var x = evt.pageX;
+//     var y = evt.pageY;
+//     console.log(x);
   
-    $("#cross").css("left", x + "px");
-    $("#cross").css("top", y + "px");
+//     $("#cross").css("left", x + "px");
+//     $("#cross").css("top", y + "px");
   
-    if (x < $(window).width() / 2 - 50) {
-      $("#cat").attr("src", "https://awiclass.monoame.com/catpic/cat_left.png");
-    } else if (x > $(window).width() / 2 + 50) {
-      $("#cat").attr("src", "https://awiclass.monoame.com/catpic/cat_right.png");
-    } else {
-      $("#cat").attr("src", "https://awiclass.monoame.com/catpic/cat_top.png");
-    }
-    if (x < $(window).width() / 2 - 50 && y < $(window).height() / 2) {
-      $("#cat").attr(
-        "src",
-        "https://awiclass.monoame.com/catpic/cat_lefttop.png"
-      );
-    }
-    if (x > $(window).width() / 2 + 50 && y < $(window).height() / 2) {
-      $("#cat").attr(
-        "src",
-        "https://awiclass.monoame.com/catpic/cat_righttop.png"
-      );
-    }
-  });
+//     if (x < $(window).width() / 2 - 50) {
+//       $("#cat").attr("src", "https://awiclass.monoame.com/catpic/cat_left.png");
+//     } else if (x > $(window).width() / 2 + 50) {
+//       $("#cat").attr("src", "https://awiclass.monoame.com/catpic/cat_right.png");
+//     } else {
+//       $("#cat").attr("src", "https://awiclass.monoame.com/catpic/cat_top.png");
+//     }
+//     if (x < $(window).width() / 2 - 50 && y < $(window).height() / 2) {
+//       $("#cat").attr(
+//         "src",
+//         "https://awiclass.monoame.com/catpic/cat_lefttop.png"
+//       );
+//     }
+//     if (x > $(window).width() / 2 + 50 && y < $(window).height() / 2) {
+//       $("#cat").attr(
+//         "src",
+//         "https://awiclass.monoame.com/catpic/cat_righttop.png"
+//       );
+//     }
+//   });
   
   
   // donationnum

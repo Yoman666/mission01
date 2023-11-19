@@ -420,7 +420,7 @@ section{
   top: 50%;
   transform: translate(-50%, -50%) rotate(0deg);
 } */
-#cross:before, #cross:after {
+/* #cross:before, #cross:after {
   content: "";
   display: block;
   width: 60px;
@@ -433,10 +433,4 @@ section{
 }
 #cross:after {
   transform: translate(-50%, -50%) rotate(136deg);
-}
-
-@media(max-width:990px){
-  #cross{
-    display: none;
-  }
-}
+} */
